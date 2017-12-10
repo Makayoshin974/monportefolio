@@ -123,7 +123,7 @@ body { background-color: #022121;
   color:orange; 
 }
 h2{
-  font-size: 3.5rem;
+  font-size: 3rem;
 
 }
 h4{
@@ -317,7 +317,7 @@ nav.clicked a:nth-child(5) {
   position: absolute;
   opacity: 1;
   width: 1px;
-  height: 15vh;
+  height: 14vh;
   margin-top: -12vh;
   transform-origin: 50% 100%;
   background: white;
@@ -336,11 +336,9 @@ nav.clicked a:nth-child(5) {
     position: absolute;
     left: inherit;
   }
-  @media  all  and (min-device-width : 1366px){
-    .el{
-       height: 14vh;
-    }
+  
 }
+  
 
 @media  all and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
@@ -356,21 +354,9 @@ and (max-device-width : 1024px) {
 }
 }
 
-@media  all and (min-device-width : 768px) 
-and (max-device-width : 1024px)  and (orientation: landscape){
-  nav {
-    position: absolute;
-    left: inherit;
-  }
-  .wrapper {
-      top: 40px;
-  }
-.el{
-  height: 8vh;
-}
-}
-@media  all  and (min-device-width : 1024px) 
-and (max-device-width : 1366px) {
+
+@media  all and (max-device-width : 1366px) and (min-device-width : 1023px) 
+ {
   nav {
     position: absolute;
     left: inherit;
@@ -382,6 +368,28 @@ and (max-device-width : 1366px) {
   height: 6vh;
 }
 }
-#git, #cv, #cfdt, #blog{
-  display: none;
+
+@media  all and (min-device-width : 767px) 
+and (max-device-width : 1024px)  and (orientation: landscape){
+  nav {
+    position: absolute;
+    left: inherit;
+  }
+  .wrapper {
+      top: 80px;
+  }
+.el{
+  height: 9vh;
+}
+}
+.git, .cv, .cfdt, .blog{
+  display:none; 
+}
+@media  all  and (min-width : 1366px){
+    .el{
+       height: 14vh;
+    }
+    .wrapper {
+      top: 55px;
+  }
 }

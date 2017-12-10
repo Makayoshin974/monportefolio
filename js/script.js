@@ -91,6 +91,7 @@ $('.customClick1').click(function () {
     titleColor:'orange',
     messageColor:'blue',
     backgroundColor:'white',
+    transitioninMobile:'fadeinDown',
     transitionIn:'bounceInUp',
     icon: 'fa fa-dot-circle-o',
     title: 'Cliquez ',

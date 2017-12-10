@@ -37,6 +37,8 @@ $("#modal-Large-gallery").iziModal({
     closeOnEscape: true,
     bodyOverflow: false,
     focusInput: true,
+    closeButton: true,
+
     onFullscreen: function(modal){
 
     },
