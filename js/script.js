@@ -63,7 +63,7 @@ for (let i = 0; i < numberOfEls; i++) createEl(i);
 
 
 iziToast.settings({
-      timeout: 3000, // default timeout
+      timeout: false, // default timeout
       resetOnHover: true,
       // icon: '', // icon class
       transitionIn: 'flipInX',
@@ -76,34 +76,79 @@ iziToast.settings({
         console.log("callback fechou!");
       }
     });
+let cfdt = document.getElementById('cfdt');
+let gt = document.getElementById('git');
+let cv = document.getElementById('cv');
+let blog = document.getElementById('blog');
 
-$('.customClick').click(function () {
+$('.customClick1').click(function () {
+
 
   iziToast.show({
-    color: 'dark',
-    icon: 'fa fa-user',
-    title: 'Hey',
-    message: 'Custom Toast!',
-        position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+    color: 'darkblue',
+    messageSize:'20',
+    titleSize:'30',
+    titleColor:'orange',
+    messageColor:'blue',
+    backgroundColor:'white',
+    transitionIn:'bounceInUp',
+    icon: 'fa fa-dot-circle-o',
+    title: 'Cliquez ',
+    message: 'sur un bouton pour acceder a la page!',
+        position: 'topCenter', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
         progressBarColor: 'rgb(0, 255, 184)',
         buttons: [
-        [
-        '<button>Ok</button>',
+        [ // cv
+        "<button class='btn btn-default' id='cv'>Cv</button>",
         function (instance, toast) {
-          alert("Hello world!");
+          iziToast.success({
+            title: 'Patientez',
+            position: 'topCenter',
+            message: 'votre page arrive tout de suite!',
+          });
+          cv.click();
         }
         ],
-        [
-        '<button>Close</button>',
+        [//github
+        "<button id='git'>Github</button>",
         function (instance, toast) {
-          instance.hide({
-            transitionOut: 'fadeOutUp'
-          }, toast);
+          iziToast.success({
+            title: 'Patientez',
+            position: 'topCenter',
+            message: 'votre page arrive tout de suite!',
+          });
+          gt.click(); 
+        }
+        ],
+        [// cfdt
+        "<button id='cfdt'>CFDT</button>",
+        function (instance, toast) {
+          iziToast.success({
+            title: 'Patientez',
+            position: 'topCenter',
+            message: 'votre page arrive tout de suite!',
+          });
+          cfdt.click();
+          
+        }
+        ],
+        [// blog-bang
+        "<button id='blog'>Blog</button>",
+        function (instance, toast) {
+          iziToast.success({
+            title: 'Patientez',
+            position: 'topCenter',
+            message: 'votre page arrive tout de suite!',
+          });
+          blog.click();
         }
         ]
         ]
-      });
 
-    }); // ! .click()
+      });  
+
+});
+
+    //! .click()
 
 

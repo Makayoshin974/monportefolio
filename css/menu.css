@@ -110,8 +110,7 @@
 }
 
 
-body { background: #022121;
-  
+body { background-color: #022121;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,11 +123,11 @@ body { background: #022121;
   color:orange; 
 }
 h2{
-  font-size: 4rem;
+  font-size: 3.5rem;
 
 }
 h4{
-  color: gray;
+  color: #7d7e7d;
 }
 h3{
   color:#00ff04;
@@ -318,7 +317,7 @@ nav.clicked a:nth-child(5) {
   position: absolute;
   opacity: 1;
   width: 1px;
-  height: 14vh;
+  height: 15vh;
   margin-top: -12vh;
   transform-origin: 50% 100%;
   background: white;
@@ -383,4 +382,6 @@ and (max-device-width : 1366px) {
   height: 6vh;
 }
 }
-
+#git, #cv, #cfdt, #blog{
+  display: none;
+}
