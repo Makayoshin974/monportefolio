@@ -100,23 +100,49 @@
     top: 45%;
   }
 }
+
+
 @font-face {
   font-family: sans-serif;
   
   font-weight: normal;
   font-style: normal;
 }
-* {
-  box-sizing: border-box;
-}
-body { background: linear-gradient(135deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+
+
+body { background: #022121;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
-}
 
+}
+.titre1{
+  font-size: 2rem;
+  color:orange; 
+}
+h2{
+  font-size: 4rem;
+
+}
+h4{
+  color: gray;
+}
+h3{
+  color:#00ff04;
+  font-size: 2rem;
+}
+.clrgray{
+  height: 5px;
+  width: 76%;
+  margin-left: 13%;
+  background: lightgray;
+}
+.thumbnail{
+  width: 580px;
+}
 .ss-icon {
   font-family: "SSSocialCircle";
   text-decoration: none;
@@ -127,6 +153,10 @@ body { background: linear-gradient(135deg, rgba(125,126,125,1) 0%,rgba(14,14,14,
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
   
+}
+.fa{
+  margin-top: 14px;
+
 }
 
 nav {
@@ -140,13 +170,14 @@ nav {
   border-radius: 50%;
   -webkit-transition: .3s;
   transition: .3s;
-  background: red; 
+  background: black; 
   background: -webkit-radial-gradient(circle, orange, white, white); 
   background: -o-radial-gradient(circle, orange, white, white); 
   background: -moz-radial-gradient(circle,orange, white, white); 
   background: radial-gradient(circle,rgba(125,126,125,1), rgba(125,126,125,1),white);
   outline: none;
 }
+
 nav:hover, nav:focus {
   background:radial-gradient(circle, rgba(125,126,125,1),white , rgba(125,126,125,1));
 }
@@ -194,7 +225,7 @@ nav a {
   background: rgb(216, 255, 214);
   text-align: center;
   line-height: 1.5;
-  color: rgba(125,126,125,1);
+  color: white;
   text-decoration: none;
   position: absolute;
   font-size: 3.2rem;
@@ -204,12 +235,15 @@ nav a {
   -webkit-transition: .4s;
   transition: .4s;
   z-index: -1;
+  opacity: 0.4;
 }
 nav a:hover, nav a:focus {
   background: white;
+  opacity: 0.9;
+
 
   nav a:nth-child(0) {
-    background: #ff1a00;
+   
     -webkit-transform: rotate(-72deg);
     transform: rotate(-72deg);
 
@@ -221,7 +255,8 @@ nav.clicked a:nth-child(0) {
 
 }
 nav a:nth-child(1) {
-  background: #e3ff00;
+  
+  background:radial-gradient(circle,white, rgba(156, 112, 19,0.2),rgba(156, 112, 19,1));
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
@@ -230,6 +265,7 @@ nav.clicked a:nth-child(1) {
   transform: rotate(0deg) translateX(8rem) rotate(-0deg);
 }
 nav a:nth-child(2) {
+   background:radial-gradient(circle,white, rgba(10, 191, 7,0.2),rgba(10, 191, 7,1));
   -webkit-transform: rotate(74deg);
   transform: rotate(74deg);
 }
@@ -237,7 +273,9 @@ nav.clicked a:nth-child(2) {
   -webkit-transform: rotate(74deg) translateX(8rem) rotate(-72deg);
   transform: rotate(74deg) translateX(8rem) rotate(-72deg);
 }
+
 nav a:nth-child(3) {
+  background:radial-gradient(circle,white, rgba(6, 85, 150,0.2),rgba(6, 85, 150,1));
   -webkit-transform: rotate(144deg);
   transform: rotate(144deg);
 }
@@ -246,6 +284,7 @@ nav.clicked a:nth-child(3) {
   transform: rotate(144deg) translateX(8rem) rotate(-144deg);
 }
 nav a:nth-child(4) {
+   background:radial-gradient(circle,white, rgba(147, 6, 160,0.2),rgba(147, 6, 160,1));
   -webkit-transform: rotate(216deg);
   transform: rotate(216deg);
 }
@@ -254,6 +293,8 @@ nav.clicked a:nth-child(4) {
   transform: rotate(216deg) translateX(8rem) rotate(-216deg);
 }
 nav a:nth-child(5) {
+   /*background: #ff1a00;*/
+   background:radial-gradient(circle, white, rgba(194, 112, 112,0.5), rgba(194, 112, 112,1));
   -webkit-transform: rotate(288deg);
   transform: rotate(288deg);
 }

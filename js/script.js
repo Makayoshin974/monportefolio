@@ -1,7 +1,11 @@
+
+
+
+
 function clickSet() {
-   circularnav.classList.toggle("closed")
-   circularnav.classList.toggle("clicked");
-   if (circularnav.classList.contains("closed")) {
+ circularnav.classList.toggle("closed")
+ circularnav.classList.toggle("clicked");
+ if (circularnav.classList.contains("closed")) {
     // freshly closed button
     var pseudoBefore = window.getComputedStyle(
       document.querySelector('.ss-icon'), ':before'
@@ -18,10 +22,10 @@ circularnav.addEventListener("keydown", function (e) {
     clickSet();
   }
 });
- 
+
 const wrapperEl = document.querySelector('.wrapper');
 const numberOfEls = 70;
-const duration = 10000;
+const duration = 8000;
 const delay = duration / numberOfEls;
 
 let tl = anime.timeline({
@@ -55,4 +59,51 @@ function createEl(i) {
 };
 
 for (let i = 0; i < numberOfEls; i++) createEl(i);
+  // TOAST......
+
+
+iziToast.settings({
+      timeout: 3000, // default timeout
+      resetOnHover: true,
+      // icon: '', // icon class
+      transitionIn: 'flipInX',
+      transitionOut: 'flipOutX',
+      position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
+      onOpen: function () {
+        console.log('callback abriu!');
+      },
+      onClose: function () {
+        console.log("callback fechou!");
+      }
+    });
+
+$('.customClick').click(function () {
+
+  iziToast.show({
+    color: 'dark',
+    icon: 'fa fa-user',
+    title: 'Hey',
+    message: 'Custom Toast!',
+        position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+        progressBarColor: 'rgb(0, 255, 184)',
+        buttons: [
+        [
+        '<button>Ok</button>',
+        function (instance, toast) {
+          alert("Hello world!");
+        }
+        ],
+        [
+        '<button>Close</button>',
+        function (instance, toast) {
+          instance.hide({
+            transitionOut: 'fadeOutUp'
+          }, toast);
+        }
+        ]
+        ]
+      });
+
+    }); // ! .click()
+
 

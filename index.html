@@ -1,37 +1,216 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Anime logo animation | anime.js</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Anime logo animation | anime.js</title>
+  <link href="lib/css/iziModal.min.css" rel="stylesheet">
+  <link href="lib/css/iziToast.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/menu.css">
   
-  <style type="text/css" >
 
-</style>
 
 </head>
 <body>
 
- <nav class="ss-icon closed" id='nn' tabindex="0">
-  <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i></a>
-  <a href="#"><i class="fa fa-file-text" aria-hidden="true"></i></a>  
-  <a href="#">BB</a> 
-  <a href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i></a>   
-  <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+ <nav class="ss-icon closed " id='nn' tabindex="0">
+  <a class="trigger-largeContent" href="#"><i class="fa fa-tachometer" aria-hidden="true"></i></a>
+  <a class="customClick" href="#"><i class="fa fa-file-text" aria-hidden="true"></i></a>  
+  <a class="bleue" href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></a> 
+  <a class="violet" href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i></a>   
+  <a class="trigger-large-gallery" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
   <div class="wrapper">
 
-</div>
+  </div>
 </nav>
 
 
+<!-- Large Modal COMPETENCES -->
+
+<div id="modal-Large" class="modal">
+  <h1 class="titre1">Developper Web</h1>
+  <ul class="list-group">
+    <li class="list-group-item">Programmer en Language HTML, CSS et JavaScript 
+    </li>
+    <li class="list-group-item">Maîtrise de l’information</li>
+    <li class="list-group-item">Apprendre à apprendre</li>
+    <li class="list-group-item">Compréhension des services numériques
+    </li>
+  </ul>
+  <br>
+  <h1 class="titre1">Vente</h1>
+  <ul class="list-group">
+    <li class="list-group-item">Argumentation commerciale 
+    </li>
+    <li class="list-group-item">Gestion de stock </li>
+    <li class="list-group-item">Gestion de caisse</li>
+  </ul>
+  <br>
+  <h1 class="titre1">Electronique et Energie</h1>
+  <ul class="list-group">
+    <li class="list-group-item">Chaines du froid 
+    </li>
+    <li class="list-group-item">Recherche de panne</li>
+    <li class="list-group-item">Élément de base en électronique </li>
+    <li class="list-group-item">Réparation des appareil Electroménager 
+    </li>
+  </ul>
+  <br>
+  <h1 class="titre1">Langues</h1>
+  <ul class="list-group">
+    <li class="list-group-item">Anglais
+    </li>
+    <li class="list-group-item">Français</li>
+    <li class="list-group-item">Espagnol </li>
+    <li class="list-group-item">Gujarati </li>
+  </ul>
+</div>
+<!-- End Large Modal -->
+
+<!-- Large Modal MYLIFE-->
+
+<!-- Swiper -->
+
+<div id="modal-Large-gallery" class="modal">
+
+  <div class="swiper-container">
+
+    <div class="swiper-wrapper">
 
 
+      <div class="swiper-slide">
+        <div class="thumbnail">
+          <h2>  Developeur Web  </h2>
+          <br>
+          <h3>10positif</h3>
+          <br>
+          <div class="clrgray"></div>
+          <div class="caption">
+
+            <p>Développement d'application</p>
+            <p> Création de site internet</p>
+            <p> Optimisation des outils numérique</p>
+            <div class="clrgray"></div>
+            <br>
+            <h4> Juillet 2017 à septembre 2017</h4>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="thumbnail">
+          <h2> Technicien en Electroménager </h2>
+          <br>
+          <h3>Audio+</h3>
+          <br>
+          <div class="clrgray"></div>
+          <div class="caption">
+
+            <p>Réception, vérification, recherche de pannes</p>
+            <p> Remplacement et livraison de divers appareils électromenagers et audiovisuels
+            </p>
+            <p>Éxecution des tâches en atelier et chez le clients</p>
+            <div class="clrgray"></div>
+            <br>
+            <h4>  Juillet 2007 à juin 2008</h4>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="thumbnail">
+          <h2> Vendeur Animateur </h2>
+          <br>
+          <h3>Audio+</h3>
+          <br>
+          <div class="clrgray"></div>
+          <div class="caption">
+
+            <p>Vendeur en braderies commerciales</p>
+            <p> Vente de tout type d'article
+            </p>
+            <p>Acceuil et relation client</p>
+            <div class="clrgray"></div>
+            <br>
+            <h4>  Septembre 2012 à septembre 2013</h4>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="thumbnail">
+          <h2> Caissier serveur en restauration </h2>
+          <br>
+          <h3>Le Cardamome</h3>
+          <br>
+          <div class="clrgray"></div>
+          <div class="caption">
+
+            <p>Service et accueil de la clientèle</p>
+            <p> Mise en place et preparation au service
+            </p>
+            <p>Ouverture et fermeture du restaurant</p>
+            <p>Nettoyage et mise au propre du restaurant</p>
+            <div class="clrgray"></div>
+            <br>
+            <h4>  Octobre 2009 à mars 2011</h4>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="thumbnail">
+          <h2> Transporteur en électromenager et
+          marchandises diverses </h2>
+          <br>
+          <h3>Dada transport</h3>
+          <br>
+          <div class="clrgray"></div>
+          <div class="caption">
+
+            <p>Facturation et gestion clientèle</p>
+            <p> Chargement et vérifcation des marchandises transportées
+            </p>
+            <p>Livraison et installation des marchandises en bonne et due
+            forme</p>
+            <div class="clrgray"></div>
+            <br>
+            <h4>  Février 2006 à mai 2007</h4>
+
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    <!-- fin du wrapper -->
+
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-button-prev"></div>
+  </div>
+
+</div>
+<!-- Large Modal COMPETENCES -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="lib/js/anime.min.js"></script>
+<script src="lib/js/iziModal.min.js"></script>
+<script src="lib/js/iziToast.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-  
+<script type="text/javascript" src="js/modal.js"></script>
+
 
 
 </body>
 </html>
+
